@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var randNumArray = [Int]()
     
     //Array of sorting algorithms for UIPickerView titles
-    var algorithmArray = ["Choose a Sort Method...", "Merge Sort", "Less Efficient Merge Sort", "Bubble Sort", "Selection Sort", "Insertion Sort", "Basic Quick Sort"]
+    var algorithmArray = ["Choose a Sort Method...", "Merge Sort", "Less Efficient Merge Sort", "Bubble Sort", "Selection Sort", "Insertion Sort", "Basic Quick Sort", "Hoare Quick Sort"]
     
     //MARK: IBOutlets
     @IBOutlet weak var pickerView: UIPickerView!
@@ -47,6 +47,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func quickSortBasic()
     {
         let sortedArray = sorts.quickSortBasic(array: randNumArray)
+        let string = numbers.joinArray(array: sortedArray)
+        resultLabel.text = string
+    }
+    
+    func quickSortHoare()
+    {
+        var unsorted = [5,7,3,8,2,9,10,14]
+        let sortedArray = sorts.hoareQuickSort(&unsorted, low: 0, high: unsorted.count - 1)
         let string = numbers.joinArray(array: sortedArray)
         resultLabel.text = string
     }
@@ -173,6 +181,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             else
             {
                 quickSortBasic()
+            }
+        }
+        if row == 7
+        {
+            if randNumArray.count < 1
+            {
+                alert()
+            }
+            else
+            {
+                quickSortHoare()
             }
         }
     }
