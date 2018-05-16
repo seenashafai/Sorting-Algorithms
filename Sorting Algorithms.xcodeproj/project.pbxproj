@@ -14,6 +14,8 @@
 		0404EBFF209DB63800D8699C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404EBFD209DB63800D8699C /* LaunchScreen.storyboard */; };
 		0404EC0A209DB63800D8699C /* Sorting_AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404EC09209DB63800D8699C /* Sorting_AlgorithmsTests.swift */; };
 		0404EC15209DB63800D8699C /* Sorting_AlgorithmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404EC14209DB63800D8699C /* Sorting_AlgorithmsUITests.swift */; };
+		0404EC23209DB64700D8699C /* Sorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404EC22209DB64700D8699C /* Sorts.swift */; };
+		04639117209F374E00FCCCBC /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04639116209F374E00FCCCBC /* Numbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0404EC10209DB63800D8699C /* Sorting AlgorithmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sorting AlgorithmsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0404EC14209DB63800D8699C /* Sorting_AlgorithmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting_AlgorithmsUITests.swift; sourceTree = "<group>"; };
 		0404EC16209DB63800D8699C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404EC22209DB64700D8699C /* Sorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorts.swift; sourceTree = "<group>"; };
+		04639116209F374E00FCCCBC /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				0404EBF4209DB63700D8699C /* AppDelegate.swift */,
 				0404EBF6209DB63700D8699C /* ViewController.swift */,
+				0404EC22209DB64700D8699C /* Sorts.swift */,
+				04639116209F374E00FCCCBC /* Numbers.swift */,
 				0404EBF8209DB63700D8699C /* Main.storyboard */,
 				0404EBFB209DB63800D8699C /* Assets.xcassets */,
 				0404EBFD209DB63800D8699C /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04639117209F374E00FCCCBC /* Numbers.swift in Sources */,
 				0404EBF7209DB63700D8699C /* ViewController.swift in Sources */,
 				0404EBF5209DB63700D8699C /* AppDelegate.swift in Sources */,
+				0404EC23209DB64700D8699C /* Sorts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -433,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZQME83VC4;
 				INFOPLIST_FILE = "Sorting Algorithms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZQME83VC4;
 				INFOPLIST_FILE = "Sorting Algorithms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
